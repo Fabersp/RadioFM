@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="3vH-Xl-w30">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--Rádio-->
+        <scene sceneID="xt8-Gd-yEv">
+            <objects>
+                <viewController id="5fw-0Y-zh0" customClass="FirstViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jye-bX-UIN">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Play_iPad.png" id="D5W-KL-Gk1">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rádio off-line" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2rC-vQ-Wwm">
+                                <rect key="frame" x="76" y="978" width="587" height="21"/>
+                                <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eaz-MD-pay">
+                                <rect key="frame" x="337" y="764" width="64" height="63"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="Play_Vermelho568h.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Play_Stop:" destination="5fw-0Y-zh0" eventType="touchUpInside" id="NMp-m5-5st"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iPT-Nq-bLu">
+                                <rect key="frame" x="585" y="774" width="149" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Facebook568.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnFacabook:" destination="5fw-0Y-zh0" eventType="touchUpInside" id="JPf-Qe-tMX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Rádio" image="radio.png" id="4wv-8Z-SxI"/>
+                    <connections>
+                        <outlet property="BtnFaceBookIpad" destination="iPT-Nq-bLu" id="QIh-dR-LxB"/>
+                        <outlet property="Imagem_Fundo" destination="D5W-KL-Gk1" id="7TV-55-Asi"/>
+                        <outlet property="Lb_Info" destination="2rC-vQ-Wwm" id="U1Q-y4-b1U"/>
+                        <outlet property="start" destination="eaz-MD-pay" id="aGw-Sy-WYD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujJ-nb-hkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-1409"/>
+        </scene>
+        <!--Telefones-->
+        <scene sceneID="Z62-2L-4Qd">
+            <objects>
+                <viewController id="GHT-vI-WXN" customClass="SegundaTela" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ug3-1N-Fn7">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Contato_iPad.png" id="FfZ-41-SlI">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="954"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Telefones" image="fone.png" id="VbY-za-oeh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mRM-Bl-rsh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-292"/>
+        </scene>
+        <!--e-mail-->
+        <scene sceneID="3YQ-d4-sJE">
+            <objects>
+                <viewController id="63t-NL-tYT" customClass="QuartaTela" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8I1-Gn-qm3">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Email_iPad.png" id="rxE-cP-cW2">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="975"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="e-mail" image="e-mail.png" id="aze-6X-SAr"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaB-ga-qEf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="829"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="ANf-FS-8OQ">
+            <objects>
+                <viewController id="UFh-cm-7Zf" customClass="TerceiraTela" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="taI-bk-DdE">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Logo_Promaster.png" id="f9a-1f-Gc5">
+                                <rect key="frame" x="103" y="69" width="555" height="288"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Desenvolvido por:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5CJ-AM-fPN">
+                                <rect key="frame" x="241" y="78" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.34782608700000001" green="0.34782608700000001" blue="0.34782608700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1AU-gp-F1k">
+                                <rect key="frame" x="244" y="328" width="280" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="www.promastersolution.com">
+                                    <color key="titleColor" red="0.34782608700000001" green="0.34782608700000001" blue="0.34782608700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Site:" destination="UFh-cm-7Zf" eventType="touchUpInside" id="Q8L-5V-bZY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5uH-wE-856">
+                                <rect key="frame" x="215" y="391" width="338" height="44"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Contato">
+                                    <color key="titleColor" red="0.2864317602" green="0.2864317602" blue="0.2864317602" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Contato:" destination="UFh-cm-7Zf" eventType="touchUpInside" id="kiS-9S-FJ6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Cop-EB-KxW">
+                                <rect key="frame" x="215" y="454" width="338" height="44"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Contar a um amigo">
+                                    <color key="titleColor" red="0.2864317602" green="0.2864317602" blue="0.2864317602" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Contar_amigo:" destination="UFh-cm-7Zf" eventType="touchUpInside" id="gjA-5u-mhc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="axj-4Q-znP">
+                                <rect key="frame" x="215" y="514" width="338" height="44"/>
+                                <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Enviar comentário por E-mail">
+                                    <color key="titleColor" red="0.2864317602" green="0.2864317602" blue="0.2864317602" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Comentario:" destination="UFh-cm-7Zf" eventType="touchUpInside" id="KB8-gN-ODe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Info" image="Info-icon.png" id="jXk-Yr-X9U"/>
+                    <connections>
+                        <outlet property="Comentario" destination="axj-4Q-znP" id="ZXn-2n-OpO"/>
+                        <outlet property="Contar_amigo" destination="Cop-EB-KxW" id="NA6-hF-LA6"/>
+                        <outlet property="Contato" destination="5uH-wE-856" id="LCP-lM-mR1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbZ-dH-fY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="1949"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="dQh-VO-GLP">
+            <objects>
+                <tabBarController id="3vH-Xl-w30" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="lT9-40-esT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5fw-0Y-zh0" kind="relationship" relationship="viewControllers" id="etG-Y7-Jk9"/>
+                        <segue destination="GHT-vI-WXN" kind="relationship" relationship="viewControllers" id="e4s-d8-5ni"/>
+                        <segue destination="63t-NL-tYT" kind="relationship" relationship="viewControllers" id="tYP-1l-NlE"/>
+                        <segue destination="UFh-cm-7Zf" kind="relationship" relationship="viewControllers" id="FU6-NK-zVt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSc-7F-QSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1164" y="-11"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Contato_iPad.png" width="768" height="975"/>
+        <image name="Email_iPad.png" width="768" height="975"/>
+        <image name="Facebook568.png" width="193" height="64"/>
+        <image name="Info-icon.png" width="35" height="35"/>
+        <image name="Logo_Promaster.png" width="600" height="225"/>
+        <image name="Play_Vermelho568h.png" width="64" height="63"/>
+        <image name="Play_iPad.png" width="768" height="975"/>
+        <image name="e-mail.png" width="35" height="35"/>
+        <image name="fone.png" width="35" height="35"/>
+        <image name="radio.png" width="32" height="32"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
